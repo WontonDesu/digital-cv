@@ -1,0 +1,111 @@
+/*My attempt at a vaporwave adjacent starter style*/
+html{
+    font-size: 12px;
+}
+
+body{
+    font-family: Overlock, sans-serif;
+    background:linear-gradient(135deg, aquamarine 20%, hsl(275, 80%, 65%));
+    color: rgb(247, 73, 166);  
+}
+
+h1{
+    font-family: Audiowide, sans-serif;
+    font-size: 2.5rem;
+    color: hsl(60, 92%, 70%);
+    text-shadow: -5px 5px 5px hsl(30, 80%, 40%);
+   
+}
+
+h2{
+    font-family: Doto, sans-serif;
+    font-size: 1.75rem;
+    color: hsl(119, 90%, 56%);
+    text-shadow: -2px 2px 2px black;
+}
+
+caption{        
+    font-family: Doto, sans-serif;
+    font-size: 1.5rem;
+    color: navy;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+th{
+    text-decoration: underline;
+    font-size: 1.25rem;
+    color: hsl(275, 82%, 33%);
+}
+ 
+td:nth-of-type(odd){
+    color: black;
+}
+
+body{
+    background-image: url(images/layout.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 center 0 center;
+    background-size: contain;
+    background-size: 100vw;
+    position: relative;
+}
+
+.mid-container{
+    position: absolute;
+    width: 780px; 
+    height: 330px;
+    background-color: lightblue;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    top: 55px;
+    left: 328px;  
+    /* align-content: center;  */
+    /* justify-content: center; */
+}
+
+.middle-screen .info-container{ 
+    position: absolute;
+    display: inline-block;
+    /* margin: 10px; */
+    padding: 10px;
+    top:25%;
+    left:25%;  
+}
+
+.middle-screen .summary-container{
+    position: absolute;
+    display: inline-block;
+    max-width: 35%;
+    padding: 10px;
+    right: 0;
+    top: 0;
+}
+
+.left-container, .right-container{
+    position: absolute;
+    width:280px;
+    height:475px;
+    background-color: lightcoral;
+    padding: 10px;
+    top: 57px;
+    box-sizing: border-box;
+}
+.left-container{
+    left: 38px; 
+}
+.right-container{
+    right: 23px;
+}
+
+ #selfie{
+    /* round off the edges add border*/
+    height: 310px;
+    left: 0;
+ }
+
+
