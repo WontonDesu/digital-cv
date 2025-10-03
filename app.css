@@ -63,15 +63,12 @@ body{
     box-sizing: border-box;
     display: flex;
     top: 55px;
-    left: 328px;  
-    /* align-content: center;  */
-    /* justify-content: center; */
+    left: 328px;
 }
 
 .middle-screen .info-container{ 
     position: absolute;
     display: inline-block;
-    /* margin: 10px; */
     padding: 10px;
     top:25%;
     left:25%;  
@@ -88,24 +85,36 @@ body{
 
 .left-container, .right-container{
     position: absolute;
-    width:280px;
-    height:475px;
     background-color: lightcoral;
     padding: 10px;
-    top: 57px;
     box-sizing: border-box;
 }
 .left-container{
-    left: 38px; 
+    left: 39px; 
+    width:305px;
+    height:506px;
+    top: 49px;
+    transform: skew(.8deg,-4deg) perspective(700px) rotateY(23deg) /* Makes left div fit into background monitor*/
+
 }
 .right-container{
-    right: 23px;
+    right: 20px;
+    width:308px;
+    height:500px;
+    top: 53px;
+    transform: skew(-.8deg,4deg) perspective(800px) rotateY(-24deg) /*makes right div fit into background monitor*/
+    
 }
 
  #selfie{
     /* round off the edges add border*/
     height: 310px;
     left: 0;
+ }
+
+ /*Adds scrolling for each container*/
+ .mid-container, .left-container, .right-container{
+    overflow: scroll;
  }
 
 
